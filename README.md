@@ -3,13 +3,12 @@ O macOs roda sobre Darwin OS (kernel XNU), que é um sistema UNIX-like. Então,
 todos os comandos abaixo também funcionam normalmente no MacOS. Recomendo
 utilizar o gerenciador de pacotes homebrew caso necessário instalar algo.
 Se quiser o mesmo terminal que eu (ZSH com Oh My ZSH), utilize este vídeo para 
-configurar https://youtu.be/bs1-Wxb_KIc  
+configurar [https://youtu.be/bs1-Wxb_KIc](https://youtu.be/bs1-Wxb_KIc)
 
 # Se você usa Windows
 No Windows é possível utilizar o wsl2 e instalar uma versão do linux para 
 acompanhar. Eu fiz alguns vídeos para você usar o Linux no Windows. 
-Primeiro siga este vídeo para ativar o WSL2 https://youtu.be/05YN8F8ajBc e 
-depois configure seu terminal com ZSH com este outro vídeo https://youtu.be/y-w-gamp4U0  
+Primeiro, siga este vídeo para ativar o WSL2 [https://youtu.be/05YN8F8ajBc](https://youtu.be/05YN8F8ajBc); depois, configure seu terminal com ZSH com este outro vídeo [https://youtu.be/y-w-gamp4U0](https://youtu.be/y-w-gamp4U0).  
 
 # GUI vs CLI  
 - GUI - Graphical User Interface  
@@ -18,25 +17,25 @@ depois configure seu terminal com ZSH com este outro vídeo https://youtu.be/y-w
 # Comandos mais básicos e muito usados
 ## Privilégios do usuário
 - `sudo` - Permite executar programas c/ privilégios de outro usuário - por padrão,
-  como o superusuário - root). `sudo` significa "substitute user do" (usuário 
+  como o root). `sudo` significa "substitute user do" (usuário 
   substituto faça)  
 ## Navegação
 - `pwd` - print working directory (mostra o caminho do diretório atual)  
 - `ls` - lista tudo no diretório atual  
-  - `-a` - inclui entradas que o nome começa - com ponto (ocultos)  
+  - `-a` - inclui entradas que o nome começa com ponto (arquivos ou diretórios ocultos)  
   - `-l` - lista em formato longo  
-  - `-h` - com -l sufixo de tamanho para facilitar a leitura   
-  - `-@` - mostra atributos extendidos  
+  - `-h` - com -l, é um sufixo de tamanho para facilitar a leitura   
+  - `-@` - mostra atributos estendidos  
 - `cd` - change directory
   - `.` - diretório atual
-  - `..` - ditório acima
+  - `..` - diretório acima
   - `/` - o diretório root ou a separação de diretórios
   - `~` - home (cd sem nada vai para a home)
-  - `-` (menos volta para o diretório que vc estava antes)  
-- `tree` - mostra a arvore do diretório atual  
+  - `-` menos - volta para o diretório que anterior  
+- `tree` - mostra a árvore do diretório atual  
   - `-d` - diretórios  
   - `-a` - mostra arquivos ocultos  
-- `cat` - concatena e mostra o conteúdo de um arquivo  
+- `cat` - concatena e/ou mostra o conteúdo de um arquivo  
   - `-n` - enumera as linhas
 - `tail` - lista as últimas linhas do arquivo  
   - `-NÚMERO` - mostra a quantidade de linhas que for adicionado em `NÚMERO`.
@@ -49,15 +48,15 @@ depois configure seu terminal com ZSH com este outro vídeo https://youtu.be/y-w
 - `cp` - copia arquivos ou diretórios  
   - `-R` - copia o diretório em modo recursivo  
   <sub><sup>**Obs.:** Segundo o `man` (manual) do `cp`, se tiver uma barra (/) no final do diretório original, `cp` pode copiar apenas o conteúdo do diretório e não o diretório em si (eu não vi isso ocorrer em testes).</sup></sub>  
-- `mv` - move arquivos ou diretórios (com mv vc pode renomear arquivos ou diretórios)  
+- `mv` - move arquivos ou diretórios (com mv você pode renomear arquivos ou diretórios)  
 - `mkdir` - cria um diretório (use aspas ou barra invertida para separar caracteres inválidos)  
-  - `-p` - cria uma estrutura inteira sem gerar error  
+  - `-p` - cria uma estrutura inteira sem gerar erros  
   <sub><sup>Obs.: você pode usar chaves para criar múltiplos sub-diretórios.</sup></sub>  
 - `rm` - apaga arquivos e diretórios  
   - `-R` - modo recursivo para diretórios  
   - `-f` - modo forçado e silencioso  
 - `touch` - muda os tempos de acesso e modificação de um arquivo. Grande parte dos casos, usamos este comando para criar um arquivo vazio.  
-## Alguns símbolos (operadores) úteis
+## Alguns símbolos e operadores úteis
 - `;` - permite executar vários comandos na mesma linha. Roda todos os comandos, mesmo se ocorrer algum erro.
 - `&&` - permite executar vários comandos na mesma linha. Se o comando anterior não gerar nenhum erro, continua a corrente de comandos, do contrário, para no momento que ocorrer um erro.  
 - `||` - permite executar vários comandos na mesma linha. Ele funciona de maneira oposta ao anterior, ou seja, se ocorrer algum erro no comando anterior, executa o próximo comando, do contrário, para no primeiro comando que **NÃO** gerar um erro.  
@@ -67,7 +66,7 @@ depois configure seu terminal com ZSH com este outro vídeo https://youtu.be/y-w
 - `&` - Joga para o background. Veja `jobs` e `fg` para complementar
 ## Background e Foreground
 - `jobs` - mostra trabalhos em execução  
-- `fg %n` - traz o que estiver em background para o foreground  
+- `fg %n` - leva o que estiver em background para o foreground  
 - `bg %n` - continua um job em background  
 - `kill %n` - mata um job
 ## Outros comandos
