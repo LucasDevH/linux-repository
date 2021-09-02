@@ -19,6 +19,10 @@ Primeiro, siga este vídeo para ativar o WSL2 [https://youtu.be/05YN8F8ajBc](htt
 - `sudo` - Permite executar programas c/ privilégios de outro usuário - por padrão,
   como o root). `sudo` significa "substitute user do" (usuário 
   substituto faça)  
+  
+Vídeo sobre su, sudo e sudoers. Nesse vídeo eu detalho mais sobre o comando su, sudo e o arquivo sudoers:
+
+- [https://youtu.be/aTbEhjvlmxg](https://youtu.be/aTbEhjvlmxg)
 ## Navegação
 - `pwd` - print working directory (mostra o caminho do diretório atual)  
 - `ls` - lista tudo no diretório atual  
@@ -26,6 +30,13 @@ Primeiro, siga este vídeo para ativar o WSL2 [https://youtu.be/05YN8F8ajBc](htt
   - `-l` - lista em formato longo  
   - `-h` - com -l, é um sufixo de tamanho para facilitar a leitura   
   - `-@` - mostra atributos estendidos  
+
+Vídeo sobre permissões no Linux. Isso vai te ajudar a entender melhor como o sistema de Usuários, grupos e permissões no Linux (Ubuntu):
+
+- [https://youtu.be/S2h92LNcEz8](https://youtu.be/S2h92LNcEz8)
+
+Mais comandos:
+
 - `cd` - change directory
   - `.` - diretório atual
   - `..` - diretório acima
